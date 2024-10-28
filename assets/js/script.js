@@ -134,6 +134,25 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(function(position) {
+      // Get user's current coordinates
+      var lat = position.coords.latitude;
+      var lng = position.coords.longitude;
+
+      // Generate a new Google Maps URL using the coordinates
+      var mapSrc = `https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d200000!2d${lng}!3d${lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1`;
+
+      // Update the iframe src to show user's location
+      document.getElementById('mapFrame').src = mapSrc;
+  }, function(error) {
+      console.error('Error fetching location:', error);
+      alert('Unable to retrieve your location');
+  });
+} else {
+  alert('Geolocation is not supported by your browser.');
+}
+
 
 
 // page navigation variables
@@ -157,3 +176,4 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+

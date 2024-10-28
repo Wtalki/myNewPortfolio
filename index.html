@@ -35,6 +35,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 </head>
 
 <body>
+  <canvas id="canvas"></canvas>
 
   <!--
     - #MAIN
@@ -55,7 +56,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
+          <h1 class="name" title="Richard hanrick">Hendrix Rocco</h1>
 
           <p class="title">Web developer</p>
         </div>
@@ -67,7 +68,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
         </button>
 
       </div>
-
+      <audio src="./assets/mp3/mixkit-sci-fi-click-900.wav" id="clickAudio"></audio>
       <div class="sidebar-info_more">
 
         <div class="separator"></div>
@@ -83,7 +84,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
+              <a href="mailto:walki6talki@gmail.com" class="contact-link" id="contact-link">walki6talki@gmail.com</a>
             </div>
 
           </li>
@@ -97,7 +98,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+              <a href="tel:+959761993203" class="contact-link" id="contact-phone">+95 (976) 199-3203</a>
             </div>
 
           </li>
@@ -111,7 +112,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
             <div class="contact-info">
               <p class="contact-title">Birthday</p>
 
-              <time datetime="1982-06-23">June 23, 1982</time>
+              <time datetime="1982-06-23" >Mar 22, 2002</time>
             </div>
 
           </li>
@@ -125,7 +126,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Sacramento, California, USA</address>
+              <address>Zagawar Street,Too Chaung, Htantabin, Yangon, Myanmar</address>
             </div>
 
           </li>
@@ -151,6 +152,16 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
           <li class="social-item">
             <a href="#" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/Wtalki" target="_blank" class="social-link">
+              <ion-icon name="logo-github" class="github"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin" class="linkedin"></ion-icon>
             </a>
           </li>
 
@@ -179,23 +190,23 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link  active" data-nav-link id="about">About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link id="resume">Resume</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link id="portfolio">Portfolio</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link id="blog">Blog</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link id="contact">Contact</button>
           </li>
 
         </ul>
@@ -218,20 +229,13 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
         <section class="about-text">
           <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+            I’m a dedicated web developer with a strong background in HTML, CSS, JavaScript, and modern frameworks like Vue.js and Vuetify. I build responsive, dynamic websites and web applications that focus on delivering a smooth user experience. With proficiency in Laravel for backend development and front-end design tools like Bootstrap and Tailwind CSS, I ensure clean, scalable code and sleek interfaces.
           </p>
 
           <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
+            Whether it's creating from scratch or improving existing projects, I’m passionate about turning ideas into efficient, engaging web solutions.
           </p>
         </section>
-
 
         <!--
           - service
@@ -316,14 +320,14 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
         <!--
           - testimonials
         -->
-
+        <audio src="./assets/mp3/mixkit-arcade-game-jump-coin-216.wav" id="tastimonials"></audio>
         <section class="testimonials">
 
           <h3 class="h3 testimonials-title">Testimonials</h3>
 
           <ul class="testimonials-list has-scrollbar">
 
-            <li class="testimonials-item">
+            <li class="testimonials-item" id="m1">
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
@@ -345,7 +349,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
               </div>
             </li>
 
-            <li class="testimonials-item">
+            <li class="testimonials-item" id="m2">
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
@@ -367,7 +371,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
               </div>
             </li>
 
-            <li class="testimonials-item">
+            <li class="testimonials-item" id="m3">
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
@@ -389,7 +393,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
               </div>
             </li>
 
-            <li class="testimonials-item">
+            <li class="testimonials-item" id="m4">
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
@@ -541,41 +545,36 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+              <h4 class="h4 timeline-item-title">West Yangon University</h4>
 
-              <span>2007 — 2008</span>
+              <span>2019 — 2021</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                I pursued my Myanmar at West Yangon University, where I gained a strong foundation in Myanmar major.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
+              <h4 class="h4 timeline-item-title">Code lab Education</h4>
 
-              <span>2006 — 2007</span>
+              <span>2021 — 2022</span>
 
               <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
+                I completed an intensive Full Stack Developer program at Code Lab, where I gained hands-on experience in both frontend and backend development. The curriculum focused on modern web technologies and frameworks, providing a comprehensive understanding of the full web development lifecycle.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+              <h4 class="h4 timeline-item-title">Edx and Coursel Education</h4>
 
-              <span>2002 — 2004</span>
+              <span>2022 — 2024</span>
 
               <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
+                I have completed several online courses in coding and web development through edX, a leading online learning platform. These courses provided me with a strong foundation in programming, web technologies, and software development principles, with instruction from top universities and institutions around the world.
               </p>
 
             </li>
@@ -651,9 +650,10 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
+                <h5 class="h5">Frontend</h5>
                 <data value="80">80%</data>
               </div>
+              
 
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 80%;"></div>
@@ -661,49 +661,85 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
             </li>
 
+            
             <li class="skills-item">
-
               <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
+                <h5 class="h5">Backend</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
               </div>
 
+            </li>
+            <li class="skills-item"></li>
+              <div class="title-wrapper">
+                <h5 class="h5">Git and Github</h5>
+                <data value="60">60%</data>
+              </div>
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
+                <div class="skill-progress-fill" style="width: 60%;"></div>
               </div>
 
             </li>
 
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
+            
           </ul>
 
         </section>
 
+        <section class="skill">
+          <ul class="skills-list content-card skills-icon">
+              <li class="icon">
+                <img src="./assets/html.svg" class="iconImg" alt="">
+              </li>
+              <li class="icon">
+                <img src="./assets/css.svg" class="iconImg" alt="">
+              </li>
+              <li class="icon">
+                <img src="./assets/js.svg" class="iconImg" alt="">
+              </li>
+              <li class="icon">
+                <img src="./assets/bootstrap.svg" class="iconImg" alt="">
+              </li>
+              <li class="icon">
+                <img src="./assets/vue.svg" class="iconImg" alt="">
+              </li>
+              <li class="icon">
+                <img src="./assets/tailwind.svg" class="iconImg" alt="">
+              </li>
+              <li class="icon">
+                <img src="./assets/php.svg" class="iconImg" alt="">
+              </li>
+              <li class="icon">
+                <img src="./assets/laravel.svg" class="iconImg" alt="">
+              </li>
+              <li class="icon">
+                <img src="./assets/github.svg" class="iconImg" alt="">
+              </li>
+          </ul>
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My Hobbies</h3>
+
+          <ul class="skills-list content-card skills-icon">
+            <li class="icon">
+              <img src="./assets/beer-svgrepo-com.svg" class="iconImg" alt="">
+            </li>
+            <li class="icon">
+              <img src="./assets/ball-football-svgrepo-com.svg" class="iconImg" alt="">
+            </li>
+            <li class="icon">
+              <img src="./assets/guitar-svgrepo-com.svg" class="iconImg" alt="">
+            </li>
+            <li class="icon">
+              <img src="./assets/singing-svgrepo-com.svg" class="iconImg" alt="">
+            </li>
+        </ul>
+
+        </section>
       </article>
 
 
@@ -1198,6 +1234,8 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/audio.js"></script>
+  <script src="./assets/js/animation.js"></script>
 
   <!--
     - ionicon link
