@@ -1,0 +1,6 @@
+{
+    "appId": "com.vercel.hendrixx",
+    "appName": "hendrix",
+    "webDir": "./public",
+    "bundledWebRuntime": false
+  }
